@@ -1,26 +1,27 @@
 //Meu primeiro código em C++ 
-#include <iostream>
-#include <string>
-#include <ctime>
+#include <iostream> // biblioteca principal 
+#include <string> // usar a função string
+#include <ctime> // usar o tempo como aleatório 
 using namespace std;
 
-int main()
+int main() //função principal
 {
-	bool sair = false;
+	bool sair = false; // função buleana
 	string jog1, jog2;
-	int vida1 = 20, vida2 = 20;
-	int ataque1 = 4, defesa1 = 1;
-	int ataque2 = 4, defesa2 = 1;
+	int vida1 = 20, vida2 = 20; //diz o valor de vida
+	int ataque1 = 4, defesa1 = 1; // diz o valor Ataque
+	int ataque2 = 4, defesa2 = 1; // valor de defesa
 
+        //digitar o nome do jogador
 	cout << "Digite o nome do jogador 1:" << endl;
-	cin >> jog1;
+	cin >> jog1; //salvar o nome
 
 	cout << "Digite o nome do jogador 2:" << endl;
 	cin >> jog2;
 	
-	while (sair == false)
+	while (sair == false) 
 	{
-
+         // imprimir O personagem
 		cout << " o                    o" << endl;
 		cout << ".T./                \\.T." << endl;
 		cout << " ^                    ^" << endl;
@@ -43,7 +44,7 @@ int main()
 		// Causa dano igual o valor gerado no "dado"
 		vida2 = vida2 - dado6;
 
-		system("cls");
+		system("cls"); //apagar tudo dePois da rodada
 
 		if (vida1 <= 0 || vida2 <= 0)
 		{
