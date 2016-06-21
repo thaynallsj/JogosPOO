@@ -1,7 +1,7 @@
 /*
-	Exercício - Código Secreto
-					CÓDIGO SECRETO
-	Você é um Hacker tentando descobrir o código de
+	ExercÃ­cio - CÃ³digo Secreto
+					CÃ“DIGO SECRETO
+	VocÃª Ã© um Hacker tentando descobrir o cÃ³digo de
 				um projeto super secreto.
 			Teste suas habilidades. Boa Sorte!
 */
@@ -11,21 +11,21 @@
 #include <ctime>
 using namespace std;
 
-// Funções do Programa (explicações no código da função)
+// FunÃ§Ãµes do Programa (explicaÃ§Ãµes no cÃ³digo da funÃ§Ã£o)
 void Mostrar_Circuito(bool cod1, bool cod2, bool cod3, bool cod4);
 
 /*
-	Exercício - Código Secreto
-	Nesse jogo, o jogador precisa descobrir um código secreto de 4 (quatro) dígitos.
-	Os valores de cada parte do código vão de 1 até 4. Sempre que o jogador acertar um
+	ExercÃ­cio - CÃ³digo Secreto
+	Nesse jogo, o jogador precisa descobrir um cÃ³digo secreto de 4 (quatro) dÃ­gitos.
+	Os valores de cada parte do cÃ³digo vÃ£o de 1 atÃ© 4. Sempre que o jogador acertar um
 	dos valores, o circuito correto vai acender!
 	Detalhe: 
-	O código está incompleto!
-	1. Leia o código (linha a linha) e seus comentários.
-	2. Preencha os comentários em ----- MAIÚSCULO ----- com o código que está faltando.
-	3. Comente os trechos de código que se pede.
+	O cÃ³digo estÃ¡ incompleto!
+	1. Leia o cÃ³digo (linha a linha) e seus comentÃ¡rios.
+	2. Preencha os comentÃ¡rios em ----- MAIÃšSCULO ----- com o cÃ³digo que estÃ¡ faltando.
+	3. Comente os trechos de cÃ³digo que se pede.
 	
-	Se necessário, use uma folha para lhe auxiliar! Copie o nome das variáveis e seus valores.
+	Se necessÃ¡rio, use uma folha para lhe auxiliar! Copie o nome das variÃ¡veis e seus valores.
 	
 	Boa sorte!
 */
@@ -33,14 +33,14 @@ int main()
 {
 	bool sair = false;
 
-	// Marca os códigos em "falso" caso esteja *errado* e "true" caso esteja *certo*.
+	// Marca os cÃ³digos em "falso" caso esteja *errado* e "true" caso esteja *certo*.
 	bool cod1 = false, cod2 = false, cod3 = false, cod4 = false;
 
 	srand((int)time(0));
 
-	// Nosso código será composto de 4 (quatro) números (num1, num2, num3 e num4).
+	// Nosso cÃ³digo serÃ¡ composto de 4 (quatro) nÃºmeros (num1, num2, num3 e num4).
 	int num1, num2, num3, num4;
-	// os números do código vão ser aleatórios, indo de 1 até 4.
+	// os nÃºmeros do cÃ³digo vÃ£o ser aleatÃ³rios, indo de 1 atÃ© 4.
 	num1 = rand() % 4 + 1;
 	num2 = rand() % 4 + 1;
 	num3 = rand() % 4 + 1;
@@ -51,20 +51,20 @@ int main()
 			num2 = 4
 			num3 = 4
 			num4 = 3
-		Quer dizer que nosso código secreto será:
+		Quer dizer que nosso cÃ³digo secreto serÃ¡:
 			2 4 4 3
 	*/
 
-	// Número do código que o jogador vai digitar.
+	// NÃºmero do cÃ³digo que o jogador vai digitar.
 	int codigo;
 
 	while (!sair)
 	{
 		// Mostra o Painel de Circuitos em tela.
 		Mostrar_Circuito(cod1, cod2, cod3, cod4);
-		// Não mexa nesse código.
+		// NÃ£o mexa nesse cÃ³digo.
 
-		// Se todos os números do código estiverem corretos, então encerra.
+		// Se todos os nÃºmeros do cÃ³digo estiverem corretos, entÃ£o encerra.
 		if (cod1 == true && cod2 == true && cod3 == true && cod4 == true)
 		{
 			cout << "<SISTEMA HACKEADO COM SUCESSO ALERTA USO INDEVIDO>" << endl;
@@ -89,8 +89,8 @@ int main()
 			cin >> codigo;
 			if (codigo == num2) cod2 = true;		
 		
-			// ------ REPITA O CÓDIGO ACIMA PARA O TERCEIRO E QUARTO NUMERO QUE PRECISAM SER DIGITADOS ------
-			// Coloque o código aqui!
+			// ------ REPITA O CÃ“DIGO ACIMA PARA O TERCEIRO E QUARTO NUMERO QUE PRECISAM SER DIGITADOS ------
+			// Coloque o cÃ³digo aqui!
 			cout << "<DIGITE TERCEIRO NUMERO DO CODIGO NO TERMINAL> ";
 			cin >> codigo;
 			if (codigo == num3) cod3 = true;
@@ -99,13 +99,13 @@ int main()
 			cin >> codigo;
 			if (codigo == num4) cod4 = true;	
 
-			// ------ FAÇA UM LAÇO DE 0 ATÉ 100, PULANDO DE 10 EM 10, QUE REPITA AS DUAS LINHAS ABAIXO ------
-			//					Sua variável de controle do laço deve se chamar "cont".
+			// ------ FAÃ‡A UM LAÃ‡O DE 0 ATÃ‰ 100, PULANDO DE 10 EM 10, QUE REPITA AS DUAS LINHAS ABAIXO ------
+			//					Sua variÃ¡vel de controle do laÃ§o deve se chamar "cont".
 			int cont;
-			// Dica: "cont++" é a mesma coisa que "cont = cont + 1".
+			// Dica: "cont++" Ã© a mesma coisa que "cont = cont + 1".
 			// Dica: "cont = cont + 1" aumenta o cont em 1, ou seja, pula de 1 em 1.
 			//		 "cont = cont + 2" aumenta o cont em 2, ou seja, pula de 2 em 2.
-			// Coloque o código aqui!
+			// Coloque o cÃ³digo aqui!
 			
 			for (cont = 0; cont <= 100; cont=cont+10) 
 			{
@@ -117,14 +117,14 @@ int main()
 		system("cls");
 	}
 
-	// ------ FAÇA UM LAÇO QUE COLOQUE 4 LINHAS EM TELA ------
-	// Coloque o código aqui!
+	// ------ FAÃ‡A UM LAÃ‡O QUE COLOQUE 4 LINHAS EM TELA ------
+	// Coloque o cÃ³digo aqui!
 	for (int linhas=0; linhas<4; linhas++){
 		cout << endl;
 	}
 	cout << "O codigo foi quebrado. Os arquivos finalmente sao seus." << endl;
-	// ------ FAÇA UM LAÇO QUE COLOQUE 4 LINHAS EM TELA ------
-	// Coloque o código aqui!
+	// ------ FAÃ‡A UM LAÃ‡O QUE COLOQUE 4 LINHAS EM TELA ------
+	// Coloque o cÃ³digo aqui!
 	for (int linhas2=0; linhas2<4; linhas2++){
 		cout << endl;
 	}
@@ -135,16 +135,16 @@ int main()
 
 /*
 	Mostra o Painel de Circuitos em tela.
-	Se o jogador acertar um dos valores do código, o circuito correto vai acender.
-	Quando todos os circuitos acenderem, quer dizer que o código está completo!
-	Obs: Não mexa nesse código! Ele que vai mostrar as coisas em tela.
+	Se o jogador acertar um dos valores do cÃ³digo, o circuito correto vai acender.
+	Quando todos os circuitos acenderem, quer dizer que o cÃ³digo estÃ¡ completo!
+	Obs: NÃ£o mexa nesse cÃ³digo! Ele que vai mostrar as coisas em tela.
 */
 void Mostrar_Circuito(bool cod1, bool cod2, bool cod3, bool cod4)
 {
 	// ------ EXPLIQUE O QUE O IF ELSE ABAIXO FAZ NO PROGRAMA ------
 	// Dica: Olhe os outros IF ELSE abaixo. Veja o que muda e tente interpretar.
-	// Coloque seu comentário aqui!
-	/*É  DECLARAÇÃO DA VARIAVEL SUPER PODER , ELE TAMBEM REDUZ O CODIGO EM UMA LINHA SÓ E SE COD2 FOR VERDADEIRO  FICARA ACESOR 
+	// Coloque seu comentÃ¡rio aqui!
+	/*Ã‰  DECLARAÃ‡ÃƒO DA VARIAVEL SUPER PODER , ELE TAMBEM REDUZ O CODIGO EM UMA LINHA SÃ“ E SE COD2 FOR VERDADEIRO  FICARA ACESOR 
 	if (cod2 == true)
 	{
 		cout << "	       ____	" << endl;
@@ -208,6 +208,6 @@ void Mostrar_Circuito(bool cod1, bool cod2, bool cod3, bool cod4)
 	cout << endl << endl;
 }
 /*
-Código por https://github.com/marcelomesmo/POOAulas
+CÃ³digo por https://github.com/marcelomesmo/POOAulas
 Desenhos ASCII retirados de http://ascii.co.uk/art/pokemon
 */
