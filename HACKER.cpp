@@ -90,11 +90,10 @@ int main()
 			if (codigo == num2) cod2 = true;		
 		
 			// ------ REPITA O CÓDIGO ACIMA PARA O TERCEIRO E QUARTO NUMERO QUE PRECISAM SER DIGITADOS ------
-			// Coloque o código aqui!
 			cout << "<DIGITE TERCEIRO NUMERO DO CODIGO NO TERMINAL> ";
 			cin >> codigo;
 			if (codigo == num3) cod3 = true;
-
+				
 			cout << "<DIGITE QUARTO NUMERO DO CODIGO NO TERMINAL> ";
 			cin >> codigo;
 			if (codigo == num4) cod4 = true;	
@@ -102,34 +101,32 @@ int main()
 			// ------ FAÇA UM LAÇO DE 0 ATÉ 100, PULANDO DE 10 EM 10, QUE REPITA AS DUAS LINHAS ABAIXO ------
 			//					Sua variável de controle do laço deve se chamar "cont".
 			int cont;
+			
 			// Dica: "cont++" é a mesma coisa que "cont = cont + 1".
 			// Dica: "cont = cont + 1" aumenta o cont em 1, ou seja, pula de 1 em 1.
 			//		 "cont = cont + 2" aumenta o cont em 2, ou seja, pula de 2 em 2.
-			// Coloque o código aqui!
+			for(cont = 0; cont < 100; cont = cont + 10){
 			
-			for (cont = 0; cont <= 100; cont=cont+10) 
-			{
 					cout << "<PROCESSANDO CODIGO> AGUARDE " << cont << "%" << endl;
-					system("cls"); 
-					}
+					system("cls");
+				}
+					
+				
 		}
 
 		system("cls");
 	}
 
 	// ------ FAÇA UM LAÇO QUE COLOQUE 4 LINHAS EM TELA ------
-	// Coloque o código aqui!
-	for (int linhas=0; linhas<4; linhas++){
-		cout << endl;
+	for(int linhas=0; linhas <= 3; linhas++){
+		cout << " ---------------------------------------------" << endl;
 	}
 	cout << "O codigo foi quebrado. Os arquivos finalmente sao seus." << endl;
 	// ------ FAÇA UM LAÇO QUE COLOQUE 4 LINHAS EM TELA ------
-	// Coloque o código aqui!
-	for (int linhas2=0; linhas2<4; linhas2++){
-		cout << endl;
+	for(int linhas1=0; linhas1 <= 3; linhas1++){
+		cout << " ---------------------------------------------" << endl;
 	}
 	cout << " -------------------- FIM DE JOGO ---------------------" << endl;
-
 	return 0;
 }
 
@@ -143,8 +140,7 @@ void Mostrar_Circuito(bool cod1, bool cod2, bool cod3, bool cod4)
 {
 	// ------ EXPLIQUE O QUE O IF ELSE ABAIXO FAZ NO PROGRAMA ------
 	// Dica: Olhe os outros IF ELSE abaixo. Veja o que muda e tente interpretar.
-	// Coloque seu comentário aqui!
-	/*É  DECLARAÇÃO DA VARIAVEL SUPER PODER , ELE TAMBEM REDUZ O CODIGO EM UMA LINHA SÓ E SE COD2 FOR VERDADEIRO  FICARA ACESOR 
+	// Caso o jogador acerte um dos números, ele acenderá a luz da máquina, se não, ela irá permanecer desligada.
 	if (cod2 == true)
 	{
 		cout << "	       ____	" << endl;
@@ -207,7 +203,3 @@ void Mostrar_Circuito(bool cod1, bool cod2, bool cod3, bool cod4)
 
 	cout << endl << endl;
 }
-/*
-Código por https://github.com/marcelomesmo/POOAulas
-Desenhos ASCII retirados de http://ascii.co.uk/art/pokemon
-*/
