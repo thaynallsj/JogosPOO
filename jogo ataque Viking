@@ -7,11 +7,11 @@ using namespace std;
 //string pegar_estado(int vida);
 
 /*
-*	Jogo de RPG onde construímos um personagem Viking.
+*	Jogo de RPG onde construÃ­mos um personagem Viking.
 *
 *	Diversas telas.
 *	Menus.
-*	Animações.
+*	AnimaÃ§Ãµes.
 *	
 */
 void tela_inicial();
@@ -31,7 +31,7 @@ int main()
  tela_inicial ();
  
 
-	// ----- MOSTRA A TELA DE CRIAÇÃO DE PERSONANGES ----- 
+	// ----- MOSTRA A TELA DE CRIAÃ‡ÃƒO DE PERSONANGES ----- 
 	cout << "Criando personagem.." << endl << endl;
 
 
@@ -59,7 +59,7 @@ int main()
 		
 		
 		
-		// ----- MOSTRA O MENU DE OPÇÕES PARA AÇÔES DO JOGADOR ----- 
+		// ----- MOSTRA O MENU DE OPÃ‡Ã•ES PARA AÃ‡Ã”ES DO JOGADOR ----- 
 		int opcao;
      	mostrar_menu();
 		cin >> opcao;
@@ -86,7 +86,7 @@ int main()
 
 
 
-		// Limpa a tela para a próxima jogada
+		// Limpa a tela para a prÃ³xima jogada
 		system("cls");
 	}
  
